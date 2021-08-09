@@ -3,8 +3,13 @@ import re
 
 class Chunk:
     def __init__(self, morphs, dst):
+        # 形態素リスト
         self.morphs = morphs
+
+        # 係り先文節インデックス番号
         self.dst = dst
+
+        # 係り元文節インデックス番号リスト
         self.srcs = []
 
 
